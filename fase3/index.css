@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif;
+}
+
+/* layout con CSS Grid */
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "header header" 
+    "nav    nav" 
+    "main   aside" 
+    "footer footer";
+}
+
+header {
+    grid-area: header;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: white;
+}
+
+nav {    
+    margin-top: -20px;
+    grid-area: nav;
+    padding: 10px 0;
+    background-color: crimson;
+}
+
+.main {
+    grid-area: main;
+    padding: 10px;
+}
+
+aside {
+    grid-area: aside;
+    padding: 0;
+    max-width: 310px;
+}
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 10px;
+    color: gray;
+}
+
+
+/* estilos de botones en menú */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px;
+    color: white;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    background-color: lightcoral;
+    color: black;
+}
+
+nav ul li:hover a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul .submenu {
+    display: none;
+    flex-direction: column;
+    background-color: lightcoral;
+    margin: 10px 0 0 0;
+}
+
+nav ul .submenu li:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+}
+
+#foto-guillermo {
+    border: solid 4px gray;
+    border-radius: 50%;
+}
+
+#acercade {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "foto info";
+}
+
+#acercade .foto {
+    grid-area: foto;
+}
+
+#acercade .info {
+    grid-area: info;
+}
+
+.sig-ant {
+    margin-top: 20px;
+    border: 1px solid lightgrey;
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px gray;
+}
+
+.sig-ant a {
+    text-decoration: none;
+}
+.sig-ant:hover {
+    box-shadow: 4px 4px 10px gray;
+}
+
+h1, h2, h3, h4, h5 {
+    color: crimson;
+}
+
+header h1 {
+    color: white;
+}
+
+p {
+    line-height: 20px;
+}
