@@ -45,6 +45,11 @@ footer {
     text-align: center;
     font-size: 10px;
     color: gray;
+    padding-bottom: 30px;
+}
+
+footer hr {
+    margin-bottom: 30px;
 }
 
 
@@ -64,19 +69,19 @@ nav ul li {
     color: white;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-
 nav ul li:hover {
     background-color: lightcoral;
     color: black;
 }
 
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
 nav ul li:hover a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 nav ul .submenu {
@@ -86,10 +91,19 @@ nav ul .submenu {
     margin: 10px 0 0 0;
 }
 
+nav ul .submenu li a {
+    color: black;
+}
+
+nav ul .submenu li a:hover {
+    color: white;
+}
+
 nav ul .submenu li:hover {
     display: flex;
     flex-direction: column;
     background-color: crimson;
+    color: white;
 }
 
 #foto-guillermo {
